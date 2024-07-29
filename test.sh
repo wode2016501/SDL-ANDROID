@@ -7,7 +7,7 @@ cp api-ok.cpp AndroidImgui/src
 
 cd AndroidImgui/scr
 
-c++ api-ok.cpp -c -I. 
+c++  -std=gnu++23 api-ok.cpp -c -I. 
 
 cp api-ok.o ../..
 
