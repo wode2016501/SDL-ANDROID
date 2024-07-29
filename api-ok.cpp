@@ -8,11 +8,11 @@ extern int Android_SurfaceHeight;
 	android::ANativeWindowCreator::DisplayInfo *display1;
 int  Android_JNI_SetOrientation(){
       	android::ANativeWindowCreator::DisplayInfo display = android::ANativeWindowCreator::GetDisplayInfo();
-		/*if (display.height > display.width) {
+		if (display.height > display.width) {
 			std::swap(display.height, display.width);
-		}*/
-Android_SurfaceWidth=display.width;
-Android_SurfaceHeight=display.height;
+		}
+Android_SurfaceWidth=display.height;
+Android_SurfaceHeight=display.width;
 display1=&display;
         fprintf(stderr," Android_JNI_SetOrientation\n");
         return 0;
