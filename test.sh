@@ -24,8 +24,8 @@ make
 #编译得到静态库
 
 #测试
-
-gcc SDL-main/test/testvulkan.c api-ok.o api-test.o SDL-main/build/*.a
+cd ../..
+gcc SDL/test/testvulkan.c api-ok.o api-test.o SDL-main/build/*.a -I SDL/include
 
 adb push  a.out /data/local/tmp
 
