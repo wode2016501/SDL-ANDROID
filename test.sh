@@ -1,5 +1,5 @@
 #AndroidImgui的Androidwindow移植到sdl上显示
-
+echo 在termux下编译
 
 git clone https://github.com/wode2016501/AndroidImgui
 
