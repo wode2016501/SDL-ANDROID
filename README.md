@@ -1,4 +1,6 @@
-AndroidImgui 移植到sdl
+#AndroidImgui的Androidwindow移植到sdl上显示
+
+
 git https://github.com/wode2016501/AndroidImgui
 
 cp api-ok.cpp AndroidImgui/src 
