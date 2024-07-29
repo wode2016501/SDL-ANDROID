@@ -15,8 +15,12 @@ gcc api-test.c -c
 
 #下载SDL源码解压
 git clone https://github.com/libsdl-org/SDL
+cd SDL
 echo |tee $(find -name SDL_main.h) $(find -name  SDL_android.c)
-
+mkdir build 
+cd build 
+cmake .. 
+make 
 #编译得到静态库
 
 #测试
