@@ -1,7 +1,7 @@
 #AndroidImgui的Androidwindow移植到sdl上显示
 
 
-git https://github.com/wode2016501/AndroidImgui
+git clone https://github.com/wode2016501/AndroidImgui
 
 cp api-ok.cpp AndroidImgui/src 
 
@@ -14,7 +14,7 @@ cp api-ok.o ../..
 gcc api-test.c -c
 
 #下载SDL源码解压
-
+git clone https://github.com/libsdl-org/SDL
 echo |tee $(find -name SDL_main.h) $(find -name  SDL_android.c)
 
 #编译得到静态库
