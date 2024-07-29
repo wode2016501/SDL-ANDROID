@@ -15,7 +15,7 @@ gcc api-test.c -c
 
 #下载SDL源码解压
 
-echo |tee $(find -name SDL_main.h) $(find -name  SDL_android.c)
+echo |tee $$(find -name SDL_main.h) $$(find -name  SDL_android.c)
 
 #编译得到静态库
 
